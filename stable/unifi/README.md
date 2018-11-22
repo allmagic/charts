@@ -1,5 +1,9 @@
 # Ubiqiti Network's Unifi Controller
 
+helm install --name unifi-controller -f values.yaml stable/unifi
+helm upgrade -f values.yaml unifi-controller stable/unifi
+
+
 This is a helm chart for [Ubiqiti Network's](https://www.ubnt.com/) [Unifi Controller](https://unifi-sdn.ubnt.com/)
 
 ## TL;DR;
